@@ -17,10 +17,6 @@ const styles = {
     display: "flex",
     marginBottom: "8%",
   },
-  showMore: {
-    marginLeft: "50%",
-    marginTop: "25%" 
-  },
   showMoreIcon: {
     backgroundColor: "rgb(222, 124, 4)",
     color: "rgb(145, 36, 134)",
@@ -60,7 +56,7 @@ const IndexPage = () => {
         <div className="typewriter-text">
           <h1>Hello, my name is Sonu.</h1>
         </div>
-        <Anime opacity={[0, 1]} translateY={'1em'} delay={(e, i) => i * 2000} key={`mainsection-${Date.now()}`}>
+        <Anime opacity={[0, 1]} translateY={'1em'} delay={(e, i) => i *  1500} key={`mainsection-${Date.now()}`}>
           <div className="orange-colourstrip"/>
           <div className="purple-colourstrip"/>
           <section style={{marginTop:"5%"}}>
@@ -69,7 +65,7 @@ const IndexPage = () => {
             {/* <p>I build, fast, intuitive and responsive web apps.</p> */}
           </section>
         </Anime>
-        <div style={styles.showMore}>
+        <div className="expand-button">
           <a href="#projects"><IconButton style={styles.showMoreIcon}><ExpandMoreIcon/></IconButton></a>
         </div>
       </div>

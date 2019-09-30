@@ -1,3 +1,5 @@
+import Anime from 'react-anime';
+import EmailForm from "../components/EmailForm"
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -5,12 +7,7 @@ import SEO from "../components/seo"
 const Contact = () => (
   <Layout>
     <SEO title="Contact" />
-    <div style={{
-      height: "100%"
-    }}>
-      <h1>Hi from the contact page</h1>
-      <p>Let's get in touch!</p>
-    </div>
+      <EmailForm/>
   </Layout>
 )
 

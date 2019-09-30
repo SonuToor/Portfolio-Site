@@ -22,13 +22,18 @@ const styles = {
     },
     button: {
         color: "rgb(145, 36, 134)"
+    },
+    image: {
+
     }
 }
 
 const ProjectPreview = ({title, imgData, description, url, index, slug}) => (
         
         <div className="project-preview" style={styles.project}>
-            <Image fluid={imgData} alt={title} key={index}/>
+            <div className="project-image">
+                <Image fluid={imgData} alt={title} key={index}/>
+            </div>
             <h3 style={styles.projectTitle}>{title}<span style={{color:"rgb(222, 124, 4)"}}>_</span></h3>
             <p>{description}</p>
             <div style={styles.links}>

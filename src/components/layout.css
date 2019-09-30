@@ -12,6 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 article,
 aside,
 details,
@@ -90,6 +91,12 @@ sup {
 }
 img {
   border-style: none;
+}
+.project-image {
+  transition: all .2s ease-in-out;
+}
+.project-image:hover {
+  transform: scale(1.1);
 }
 svg:not(:root) {
   overflow: hidden;
@@ -225,6 +232,7 @@ img {
   margin-bottom: 1.45rem;
 }
 .typewriter-text {
+  width: 55%;
   margin-top: 20%;
   margin-bottom: 10%;
 }
@@ -233,17 +241,12 @@ img {
   border-right: .15em solid rgb(222, 124, 4); /* The typwriter cursor */
   white-space: nowrap;
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .1em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(75, end),
-    blink-caret .75s step-end infinite;
+    blink-caret .75s step-end infinite,
+    typing 3.5s steps(40, end);
 }
-
-/* .typewriter-text h2 {
-  margin-top: 5%;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-/* } 
-
+  
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -267,6 +270,10 @@ img {
   border-style: solid;
   border-color:rgb(145, 36, 134);
   background-color: rgb(145, 36, 134);
+}
+.expand-button {
+  margin-left: 50%;
+  margin-top: 25%;
 }
 
 .skill-chip:hover {
@@ -664,5 +671,30 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .typewriter-text {
+    width: 100%;
+  }
+  .typewriter-text h1 {
+    font-size: 30px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(222, 124, 4); /* The typwriter cursor */
+    white-space: nowrap;
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em; /* Adjust as needed */
+    animation: 
+      blink-caret .75s step-end infinite,
+      typing 3.5s steps(40, end);
+  }
+  .expand-button {
+    margin-top: 52%;
+    margin-left: 42.5%;
+  }
+
+  .email-form{
+    height: 70vh;
   }
 }
