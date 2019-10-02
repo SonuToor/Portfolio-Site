@@ -3,10 +3,6 @@ import Image from "gatsby-image";
 import React from 'react';
 
 const styles = {
-    project: {
-        marginTop: "10%",
-        marginBottom: "5%"
-    },
     projectTitle: {
         textAlign: "center",
         marginTop: "2%",
@@ -26,7 +22,7 @@ const styles = {
 
 const ProjectPage = ({title, imgData, url, repo, tools, description}) => (
         
-        <div className="project-preview" style={styles.project}>
+        <div className="project-page">
             <h1 style={styles.projectTitle}>{title}<span style={{color:"rgb(222, 124, 4)"}}>_</span></h1>
             <Image fluid={imgData} alt={title}/>
             <p style={{marginTop: "2%", color:"rgb(145, 36, 134)"}}>Summary<span style={{color:"rgb(222, 124, 4)"}}>_</span></p>

@@ -6,17 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const styles = {
-  aboutSection: {
-    display: "flex",
-    marginTop: "15%"
-  },
   photo: {
     width: "35%"
-  },
-  text: {
-    display: "flex", 
-    flexDirection: "column",
-    width: "65%"
   },
   skills: {
     display: "flex", 
@@ -25,22 +16,22 @@ const styles = {
     marginBottom: "2%"
   },
   skillList: {
-    display: "flex",
-    justifyContent: "space-evenly"
+    width: "80%"
   },
   skillChip: {
     color: "rgb(222, 124, 4)",
     borderColor: "rgb(145, 36, 134)",
-    marginLeft: "1%"
+    marginLeft: "1%",
+    marginTop: "1%"
   }
 }
 const About = () => (
   <Layout>
     <SEO title="About" />
-      <div style={styles.aboutSection} key={`about-${Date.now()}`}>
+      <div className="about-section" key={`about-${Date.now()}`}>
         <span style={styles.photo}>Photo will go here</span>
         <Anime opacity={[0, 1]} translateY={'1em'} delay={(e, i) => i * 1000}>
-          <div style={styles.text}>
+          <div className="about-text">
             <h1>A little more about me. </h1>
             <section>
               <p>My name is Sonu Toor. I am a self taught web developer based in Toronto.</p>

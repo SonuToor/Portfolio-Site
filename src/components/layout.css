@@ -276,9 +276,40 @@ img {
   margin-top: 25%;
 }
 
+.expand-less-button {
+  margin-left: 50%;
+}
+
+.projects {
+  margin-top: 5%;
+  display: flex;
+  margin-bottom: 7%;
+}
+
+.project-preview {
+  width: 50%;
+}
+
+.project-page {
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
 .skill-chip:hover {
   background-color: rgba(145, 36, 134, 0.336);
 }
+
+.about-section {
+  display: flex;
+  margin-top: 20%;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
 h1 {
   margin-left: 0;
   margin-right: 0;
@@ -690,11 +721,39 @@ pre tt:after {
       typing 3.5s steps(40, end);
   }
   .expand-button {
-    margin-top: 52%;
+    margin-top: 85%;
     margin-left: 42.5%;
+  }
+
+  .expand-less-button {
+    margin-left: 42.5%;
+    margin-top: 100%;
   }
 
   .email-form{
     height: 70vh;
   }
+
+  .projects {
+    display: block;
+    margin-top: 1%;
+  }
+  .project-preview {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .project-page {
+    margin-top: 35%;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+  
 }

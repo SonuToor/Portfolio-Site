@@ -11,7 +11,7 @@ query($slug: String!){
       repo
       tools
       fullDescription
-      image {
+      mockup {
         childImageSharp {
           fluid {
             ...GatsbyImageSharpFluid
@@ -27,7 +27,7 @@ const ProjectTemplate = ({ data }) => {
     const url = project.url;
     const description = project.fullDescription;
     const repo = project.repo;
-    const imageData = project.image.childImageSharp.fluid;
+    const imageData = project.mockup.childImageSharp.fluid;
     const tools = project.tools;
 
     return (

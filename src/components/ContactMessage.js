@@ -32,13 +32,15 @@ const StyledTextField = withStyles({
     }));
 
 
-export default function CustomizedInputs()  {
+export default function CustomizedInputs(props)  {
       return (
         <StyledTextField
         label="Enter your message"
         variant="outlined"
         multiline
         rows="8"
+        required
+        name={props.name}
       />
       )
 

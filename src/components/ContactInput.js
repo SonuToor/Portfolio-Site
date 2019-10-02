@@ -39,6 +39,9 @@ const StyledTextField = withStyles({
         className={classes.margin}
         id="custom-css-standard-input"
         label={props.label}
+        required
+        type={props.type}
+        name={props.name}
       />
       )
 

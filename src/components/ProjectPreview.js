@@ -5,17 +5,14 @@ import React from 'react';
 import { Link } from "gatsby";
 
 const styles = {
-    project: {
-        width: "50%",
-    },
     projectTitle: {
         textAlign: "center",
-        marginTop: "2%",
+        marginTop: "4%",
         color: "rgb(145, 36, 134)"
     },
     links: {
         display: "flex",
-        
+        justifyContent: "center"
     },
     demoLink: {
         textDecoration: "none"
@@ -23,14 +20,11 @@ const styles = {
     button: {
         color: "rgb(145, 36, 134)"
     },
-    image: {
-
-    }
 }
 
 const ProjectPreview = ({title, imgData, description, url, index, slug}) => (
         
-        <div className="project-preview" style={styles.project}>
+        <div className="project-preview">
             <div className="project-image">
                 <Image fluid={imgData} alt={title} key={index}/>
             </div>
