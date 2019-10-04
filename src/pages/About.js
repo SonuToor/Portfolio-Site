@@ -1,14 +1,12 @@
 import Anime from 'react-anime';
 import Chip from '@material-ui/core/Chip';
 import React from "react"
+import SonuGif from '../data/images/itsmesonu.gif'
 import { Link } from "gatsby";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const styles = {
-  photo: {
-    width: "35%"
-  },
   skills: {
     display: "flex", 
     marginTop: "5%",
@@ -16,7 +14,8 @@ const styles = {
     marginBottom: "2%"
   },
   skillList: {
-    width: "80%"
+    width: "80%",
+    textAlign: "center"
   },
   skillChip: {
     color: "rgb(222, 124, 4)",
@@ -29,14 +28,21 @@ const About = () => (
   <Layout>
     <SEO title="About" />
       <div className="about-section" key={`about-${Date.now()}`}>
-        <span style={styles.photo}>Photo will go here</span>
+        <img src={SonuGif} className="sonu-gif" alt="it's me Sonu, trying to smile." />
         <Anime opacity={[0, 1]} translateY={'1em'} delay={(e, i) => i * 1000}>
           <div className="about-text">
             <h1>A little more about me. </h1>
             <section>
               <p>My name is Sonu Toor. I am a self taught web developer based in Toronto.</p>
-              <p>I like dreaming up big things. I usually dream up something I'm not nearly prepared to create. But nearly everytime I manage to pull it off, while learning a tonne along the way. This is what motivates me as a web developer; the opportunity to create cool things and to learn new ways of creating them. This leads me to take pride and ownership of my work.</p>
-              <p>I am a genuinely curious person, I consider myself a lifelong learner which is reflected in my hobbies and interests. So when I'm not hacking away, I enjoy travelling where I love learning about people and from people. I have been lucky enough to live in two amazing cities (Toronto and Madrid). I love learning languages, currently I am fluent in English, Punjabi and Spanish. I love watching and playing sports (hockey, soccer and football). I am an avid reader so there is never a time I don't have a book in my bag and while I'm coding (or doing anything really) I am listening to music, so I have more playlists on Spotify than any human really needs.</p>
+              <p>I like dreaming up big things. I usually dream up something I'm not nearly prepared to create. 
+                But nearly everytime I manage to pull it off, while learning a tonne along the way. 
+                This is what motivates me as a web developer; the opportunity to create cool things and to learn new ways of creating them. 
+                This leads me to take pride and ownership of my work.</p>
+              <p>I am a genuinely curious person, I consider myself a lifelong learner which is reflected in my hobbies and interests. 
+                So when I'm not hacking away, I enjoy travelling where I love learning about people and from people, I've been lucky enough to live in two amazing cities (Toronto and Madrid). 
+                I love learning languages, currently I am fluent in English, Punjabi and Spanish. 
+                I love watching and playing sports (hockey, soccer and football). 
+                I am an avid reader so there is never a time I don't have a book in my bag and while I'm coding (or doing anything really) I am listening to music, so I have more playlists on Spotify than any human really needs.</p>
               <p>Thank you for taking the time out to read about me, if you're interested <Link to="/Contact"><span>reach out to me and let's build something</span><span style={{color: "rgb(222, 124, 4)" }}>!</span></Link></p>
             </section>
           </div>

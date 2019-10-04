@@ -244,7 +244,7 @@ img {
   letter-spacing: .1em; /* Adjust as needed */
   animation: 
     blink-caret .75s step-end infinite,
-    typing 3.5s steps(40, end);
+    typing 2.0s steps(40, end);
 }
   
 /* The typing effect */
@@ -293,6 +293,12 @@ img {
 .project-page {
   margin-top: 8%;
   margin-bottom: 5%;
+}
+
+.sonu-gif {
+  width: 40%;
+  height: 320px;
+  margin-top: 10%;
 }
 
 .skill-chip:hover {
@@ -705,7 +711,9 @@ pre tt:after {
   }
 }
 
-@media only screen and (max-width: 600px) {
+
+
+@media only screen and (max-width: 900px) {
   .typewriter-text {
     width: 100%;
   }
@@ -755,5 +763,27 @@ pre tt:after {
   .about-text {
     width: 100%;
   }
-  
+
+  .sonu-gif {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .typewriter-text h1{
+    font-size: 165%;
+  }
+}
+
+@media only screen and (max-height: 650px) {
+  .email-form {
+    margin-top:22%;
+    margin-bottom: 25%;
+  }
+
+  .expand-button {
+    display: none;
+  }
+
 }
