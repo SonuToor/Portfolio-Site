@@ -21,9 +21,6 @@ const styles = {
     }
 }
 const EmailForm = () => {
-    const handleSubmit = (e) => {
-        e.preventDefault();
-    }
     return (
         <div key={`contact-${Date.now()}`}>
             <Anime opacity={[0, 1]} translateY={'1em'} delay={(e, i) => i * 1000}>
@@ -34,7 +31,6 @@ const EmailForm = () => {
                     name="email-contact"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
-                    onSubmit={handleSubmit}
                     >
                         <h2 style={{textAlign: "center", color:"rgb(145, 36, 134)"}}>Let's get in touch<span style={{color: "rgb(222, 124, 4)"}}>!</span></h2>
                         <input type="hidden" name="bot-field"/>
