@@ -32,7 +32,7 @@ const StyledTextField = withStyles({
     }));
 
 
-export default function CustomizedInputs(props)  {
+export default function ContactMessage(props)  {
       return (
         <StyledTextField
         label="Enter your message"
