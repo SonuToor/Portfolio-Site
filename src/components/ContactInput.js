@@ -32,7 +32,7 @@ const StyledTextField = withStyles({
   }));
 
 
-  export default function CustomizedInputs(props)  {
+  export default function ContactInput(props)  {
     const classes = useStyles();
       return (
         <StyledTextField
