@@ -37,7 +37,7 @@ const EmailForm = () => {
                         <input type="hidden" name="form-name" value="email-contact" />
                         <ContactInput label="Enter your Email" name="email" type="email"/>
                         <ContactInput label="Subject" name="subject" type="text"/> 
-                        <ContactMessage variant='outlined' name="message"/>
+                        <ContactMessage name="message"/>
                         <Button style={styles.button} type="submit">Send</Button>
                     </form>
             </Anime>
