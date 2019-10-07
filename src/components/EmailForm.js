@@ -6,14 +6,6 @@ import React from "react";
 
 
 const styles = {
-    form: {
-        display: "flex",
-        flexDirection: "column",
-        height: "85vh",
-        justifyContent: "center",
-        width: "50%",
-        marginLeft:"25%"
-    },
     button: {
         width: "50%",
         color: "rgb(145, 36, 134)",
@@ -27,7 +19,6 @@ const EmailForm = () => {
                     <form 
                     className="email-form" 
                     method="POST" 
-                    style={styles.form} 
                     name="email-contact"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"

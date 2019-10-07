@@ -286,6 +286,15 @@ img {
   margin-bottom: 7%;
 }
 
+.email-form {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  justify-content: center;
+  width: 50%;
+  margin-left: 25%;
+}
+
 .project-preview {
   width: 50%;
 }
@@ -773,6 +782,11 @@ pre tt:after {
 @media only screen and (max-width: 400px) {
   .typewriter-text h1{
     font-size: 165%;
+  }
+  .email-form {
+    width: 65%;
+    margin-left: 17.5%;
+    margin-top: 20%;
   }
 }
 
