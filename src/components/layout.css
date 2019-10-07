@@ -738,13 +738,13 @@ pre tt:after {
       typing 3.5s steps(40, end);
   }
   .expand-button {
-    margin-top: 85%;
-    margin-left: 42.5%;
+    display: none;
+
   }
 
   .expand-less-button {
-    margin-left: 42.5%;
-    margin-top: 100%;
+    display: none;
+
   }
 
   .email-form{
