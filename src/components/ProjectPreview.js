@@ -8,7 +8,7 @@ const styles = {
     projectTitle: {
         textAlign: "center",
         marginTop: "4%",
-        color: "rgb(145, 36, 134)"
+        color: "rgb(145, 36, 134)",
     },
     links: {
         display: "flex",
@@ -22,13 +22,17 @@ const styles = {
     },
 }
 
+
+// make the title and the mockup image a link to the project page
 const ProjectPreview = ({title, imgData, description, url, index, slug}) => (
         
         <div className="project-preview">
             <div className="project-image">
                 <Image fluid={imgData} alt={title} key={index}/>
             </div>
-            <h3 style={styles.projectTitle}>{title}<span style={{color:"rgb(222, 124, 4)"}}>_</span></h3>
+            <Link to={`/${slug}`} style={styles.demoLink}>            
+                <h3 style={styles.projectTitle}>{title}<span style={{color:"rgb(222, 124, 4)"}}>_</span></h3>
+            </Link>
             <p>{description}</p>
             <div style={styles.links}>
                 <a href={url} target="_blank" style={styles.demoLink}><Button style={styles.button}>Live Demo</Button></a>
