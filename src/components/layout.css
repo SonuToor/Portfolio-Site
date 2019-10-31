@@ -779,7 +779,7 @@ pre tt:after {
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 375px) {
   .typewriter-text h1{
     font-size: 165%;
   }

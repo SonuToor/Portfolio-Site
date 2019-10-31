@@ -4,8 +4,8 @@ import ProjectPage from "../components/ProjectPage"
 import React from "react"
 
 export const query = graphql`
-query($slug: String!){
-    projectsJson(slug: {eq: $slug}) {
+  query($slug: String!) {
+    projectsJson(slug: { eq: $slug }) {
       title
       url
       repo
@@ -19,29 +19,30 @@ query($slug: String!){
         }
       }
     }
-  }`
+  }
+`
 
 const ProjectTemplate = ({ data }) => {
-    const project = data.projectsJson;
-    const title = project.title;
-    const url = project.url;
-    const description = project.fullDescription;
-    const repo = project.repo;
-    const imageData = project.mockup.childImageSharp.fluid;
-    const tools = project.tools;
+  const project = data.projectsJson
+  const title = project.title
+  const url = project.url
+  const description = project.fullDescription
+  const repo = project.repo
+  const imageData = project.mockup.childImageSharp.fluid
+  const tools = project.tools
 
-    return (
-        <Layout>
-            <ProjectPage
-            title={title}
-            url={url}
-            repo={repo}
-            description={description}
-            imgData={imageData}
-            tools={tools}/>
-        </Layout>
-    )
-
+  return (
+    <Layout>
+      <ProjectPage
+        title={title}
+        url={url}
+        repo={repo}
+        description={description}
+        imgData={imageData}
+        tools={tools}
+      />
+    </Layout>
+  )
 }
 
-export default ProjectTemplate;
+export default ProjectTemplate

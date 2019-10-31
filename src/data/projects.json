@@ -1,28 +1,26 @@
 [
-    {
-        "title" : "Travel Planner",
-        "slug" : "TravelPlanner",
-        "key" : "1",
-        "url" : "https://react-travel-planner.netlify.com",
-        "repo" : "https://github.com/SonuToor/travel-planner",
-        "image": "./images/itinerary-input.png",
-        "mockup": "./images/travelplanner-mockup.png",
-        "description" : "Choose a destination, select your dates and let the trip planner store and display your trip smartly.",
-        "fullDescription": "This travel planner web app is for anyone who feels overwhelmed when initially crafting their itinerary. This web app allows a user to select their destination, then input their dates for their trip. The app then organizes and displays the trip in an easy to digest format. It separates the trip into separate days, then each day into morning, afternoon, evening and night. The user can then input the different events for each day and time. The web app also allows for exporting the itinerary events to the user's Google Calendar. ",
-        "tools": "React.js, Material UI, Google Firebase, Google Calendars API, Google Places API"
-    },
-    {
-        "title" : "Bill Splitter",
-        "slug" : "BillSplitter",
-        "key" : "2",
-        "url" : "https://billsplitter.netlify.com",
-        "repo" : "https://github.com/SonuToor/billsplitter-react",
-        "image" : "./images/billsplitter-preview.png",
-        "mockup": "./images/billsplitter-mockup.png",
-        "description" : "Split your bill at a bar or restauraunt, with this easy to use web app that smartly calculates what each person owes.",
-        "fullDescription": "The Bill Splitter takes the guess work out of splitting the bill with friends. Simply input party size, give the party members a unique identifier and then input the items on the bill and select who had what. The app will split the bill correctly and even allows for adding a tip.",
-        "tools": "React.js, React-Bootstrap"
-    }
-    
+  {
+    "title": "Travel Planner",
+    "slug": "TravelPlanner",
+    "key": "1",
+    "url": "https://react-travel-planner.netlify.com",
+    "repo": "https://github.com/SonuToor/travel-planner",
+    "image": "./images/itinerary-input.png",
+    "mockup": "./images/travelplanner-mockup.png",
+    "description": "Choose a destination, select your dates and let the trip planner store and display your trip smartly.",
+    "fullDescription": "This travel planner web app is for anyone who feels overwhelmed when initially crafting their itinerary. This web app allows a user to select their destination, then input their dates for their trip. The app then organizes and displays the trip in an easy to digest format. It separates the trip into separate days, then each day into morning, afternoon, evening and night. The user can then input the different events for each day and time. The web app also allows for exporting the itinerary events to the user's Google Calendar. ",
+    "tools": "React.js, Material UI, Google Firebase, Google Calendars API, Google Places API"
+  },
+  {
+    "title": "Bill Splitter",
+    "slug": "BillSplitter",
+    "key": "2",
+    "url": "https://billsplitter.netlify.com",
+    "repo": "https://github.com/SonuToor/billsplitter-react",
+    "image": "./images/billsplitter-preview.png",
+    "mockup": "./images/billsplitter-mockup.png",
+    "description": "Split your bill at a bar or restauraunt, with this easy to use web app that smartly calculates what each person owes.",
+    "fullDescription": "The Bill Splitter takes the guess work out of splitting the bill with friends. Simply input party size, give the party members a unique identifier and then input the items on the bill and select who had what. The app will split the bill correctly and even allows for adding a tip.",
+    "tools": "React.js, React-Bootstrap"
+  }
 ]
-
