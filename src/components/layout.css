@@ -779,9 +779,9 @@ pre tt:after {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
   .typewriter-text h1{
-    font-size: 165%;
+    font-size: 150%;
   }
   .email-form {
     width: 65%;

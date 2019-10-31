@@ -83,7 +83,7 @@ const IndexPage = () => {
           <div className="orange-colourstrip" />
           <div className="purple-colourstrip" />
           <section style={{ marginTop: "5%" }}>
-            <h2>I like building cool things on the Web.</h2>
+            <h3>I like building cool things on the Web.</h3>
             <p>
               I am a web developer who loves finding unique solutions to unique
               problems.
