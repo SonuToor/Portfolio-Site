@@ -5,10 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import Container from '@material-ui/core/Container';
+import Container from "@material-ui/core/Container"
 import React from "react"
 import PropTypes from "prop-types"
-import { faLinkedin, faGithub, faMedium} from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faMedium,
+} from "@fortawesome/free-brands-svg-icons"
 import SocialLink from "./SocialLink"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -28,34 +32,42 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <Container>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-          display: "flex",
-          flexDirection: "column",
-          height: "100vh"
-        }}
-      >
-          <main style={{flex: "1"}}>{children}</main>
-          <footer style={{flexShrink: '0'}}>
-            <div className="orange-colourstrip"/>
-            <div className="purple-colourstrip"/>
-            <div className="socials" style={{
-                  display: "flex",
-                  justifyContent: "center"
+      <Container>
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <div
+          style={{
+            margin: `0 auto`,
+            maxWidth: 960,
+            padding: `0px 1.0875rem 1.45rem`,
+            paddingTop: 0,
+            display: "flex",
+            flexDirection: "column",
+            height: "100vh",
+          }}
+        >
+          <main style={{ flex: "1" }}>{children}</main>
+          <footer style={{ flexShrink: "0" }}>
+            <div className="orange-colourstrip" />
+            <div className="purple-colourstrip" />
+            <div
+              className="socials"
+              style={{
+                display: "flex",
+                justifyContent: "center",
               }}
-              >
-              <SocialLink to="https://github.com/SonuToor" icon={faGithub}/>
-              <SocialLink to="https://www.linkedin.com/in/sonutoor/" icon={faLinkedin}/>
-              <SocialLink to="https://medium.com/@savrooptoor92" icon={faMedium}/>
+            >
+              <SocialLink to="https://github.com/SonuToor" icon={faGithub} />
+              <SocialLink
+                to="https://www.linkedin.com/in/sonutoor/"
+                icon={faLinkedin}
+              />
+              <SocialLink
+                to="https://medium.com/@savrooptoor92"
+                icon={faMedium}
+              />
             </div>
           </footer>
-      </div>
+        </div>
       </Container>
     </>
   )

@@ -11,7 +11,7 @@ module.exports = {
       options: {
         name: `project`,
         path: `${__dirname}/src/data`,
-      }
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-material-ui`,
