@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
           }}
         >
           <main style={{ flex: "1" }}>{children}</main>
-          <footer style={{ flexShrink: "0" }}>
+          <footer style={{ flexShrink: "0", marginBottom: "2%"}}>
             <div className="orange-colourstrip" />
             <div className="purple-colourstrip" />
             <div
