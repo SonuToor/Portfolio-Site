@@ -26,7 +26,9 @@ const styles = {
 const ProjectPreview = ({ title, imgData, description, url, index, slug }) => (
   <div className="project-preview">
     <div className="project-image">
-      <Image fluid={imgData} alt={title} key={index} />
+      <Link to={`/${slug}`}>
+        <Image fluid={imgData} alt={title} key={index} />
+      </Link>
     </div>
     <Link to={`/${slug}`} style={styles.demoLink}>
       <h3 style={styles.projectTitle}>
