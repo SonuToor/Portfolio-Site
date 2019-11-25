@@ -7,6 +7,8 @@ import SEO from "../components/seo"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 import ExpandLessIcon from "@material-ui/icons/ExpandLess"
 import IconButton from "@material-ui/core/IconButton"
+import Flip from 'react-reveal/Flip';
+
 
 const styles = {
   main: {
@@ -92,29 +94,33 @@ const IndexPage = () => {
           </section>
         </Anime>
         {scrollDown === true ? (
-          <div className="expand-button">
-            <a href="#projects">
+          <Flip left>
+            <div className="expand-button">
+              <a href="#projects">
+                <IconButton
+                  style={styles.showMoreIcon}
+                  onClick={() => setScrollDown(!scrollDown)}
+                >
+                  <ExpandMoreIcon />
+                </IconButton>
+              </a>
+            </div>
+          </Flip>
+        ) : null}
+      </div>
+      {scrollDown === false ? (
+        <Flip right>
+          <div className="expand-less-button">
+            <a href="#">
               <IconButton
                 style={styles.showMoreIcon}
                 onClick={() => setScrollDown(!scrollDown)}
               >
-                <ExpandMoreIcon />
+                <ExpandLessIcon />
               </IconButton>
             </a>
           </div>
-        ) : null}
-      </div>
-      {scrollDown === false ? (
-        <div className="expand-less-button">
-          <a href="#">
-            <IconButton
-              style={styles.showMoreIcon}
-              onClick={() => setScrollDown(!scrollDown)}
-            >
-              <ExpandLessIcon />
-            </IconButton>
-          </a>
-        </div>
+        </Flip>
       ) : null}
       <div className="projects" id="projects">
         {projects.map(({ node: project }, index) => {
