@@ -1,4 +1,3 @@
-import Anime from "react-anime"
 import EmailForm from "../components/EmailForm"
 import React from "react"
 import Layout from "../components/layout"

@@ -5,11 +5,11 @@ const linkStyles = {
   textDecoration: "none",
   margin: "1%",
   color: "rgb(145, 36, 134)",
+  fontWeight: 'bold'
 }
 
 const activeStyles = {
   color: "rgb(222, 124, 4)",
-  textDecoration: "purple  underline",
 }
 
 const HeaderLink = ({ to, children }) => {
