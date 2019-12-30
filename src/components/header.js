@@ -23,7 +23,8 @@ class Header extends React.PureComponent {
       <HideHeader >
         <AppBar
           position="fixed"
-          color="default"
+          color="white"
+          elevation={0}
         >
           <Toolbar>
             <div className={classes.main}>
