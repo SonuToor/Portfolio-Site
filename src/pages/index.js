@@ -91,7 +91,7 @@ const IndexPage = () => {
           </Fade>
 
         {scrollDown === true ? (
-          <Flip left>
+          <Flip left duration={2000} delay={500}>
             <div className="expand-button">
               <a href="#projects">
                 <IconButton
@@ -106,7 +106,7 @@ const IndexPage = () => {
         ) : null}
       </div>
       {scrollDown === false ? (
-        <Flip right>
+        <Flip right duration={2000} delay={700}>
           <div className="expand-less-button">
             <a href="#">
               <IconButton

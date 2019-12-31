@@ -15,7 +15,7 @@ const styles = {
   },
 }
 
-
+// to do make links with zindex -1 still clickable
 class Header extends React.PureComponent {
   render() {
     const { classes } = this.props
@@ -25,6 +25,7 @@ class Header extends React.PureComponent {
           position="fixed"
           color="white"
           elevation={0}
+          style={{zIndex: "0"}}
         >
           <Toolbar>
             <div className={classes.main}>

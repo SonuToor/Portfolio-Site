@@ -5,7 +5,7 @@ const linkStyles = {
   textDecoration: "none",
   margin: "1%",
   color: "rgb(145, 36, 134)",
-  fontWeight: 'bold'
+  fontWeight: 'bold',
 }
 
 const activeStyles = {
