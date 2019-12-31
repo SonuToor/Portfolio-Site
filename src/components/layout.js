@@ -43,10 +43,12 @@ const Layout = ({ children }) => {
             display: "flex",
             flexDirection: "column",
             height: "100vh",
+            zIndex: "2",
+            position: "relative"
           }}
         >
           <main style={{ flex: "1" }}>{children}</main>
-          <footer style={{ flexShrink: "0", marginBottom: "2%"}}>
+          <footer style={{ flexShrink: "0", marginBottom: "1%"}}>
             <div className="orange-colourstrip" />
             <div className="purple-colourstrip" />
             <div

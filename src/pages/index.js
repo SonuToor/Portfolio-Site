@@ -1,4 +1,3 @@
-import Anime from "react-anime"
 import { graphql, useStaticQuery } from "gatsby"
 import ProjectPreview from "../components/ProjectPreview"
 import React, { useState, useEffect } from "react"
@@ -7,6 +6,7 @@ import SEO from "../components/seo"
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore"
 import ExpandLessIcon from "@material-ui/icons/ExpandLess"
 import IconButton from "@material-ui/core/IconButton"
+import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 
 
@@ -76,25 +76,22 @@ const IndexPage = () => {
         <div className="typewriter-text">
           <h1>Hello, my name is Sonu.</h1>
         </div>
-        <Anime
-          opacity={[0, 1]}
-          translateY={"1em"}
-          delay={(e, i) => i * 500}
-          key={`mainsection-${Date.now()}`}
-        >
+        <Fade top duration={2000}>
           <div className="orange-colourstrip" />
           <div className="purple-colourstrip" />
+        </Fade>
+          <Fade top delay={1000}>
           <section style={{ marginTop: "5%" }}>
             <h3>I like building cool things on the Web.</h3>
             <p>
-              I am a web developer who loves finding unique solutions to unique
-              problems.
+              I am a web developer, problem solver and serial learner.
             </p>
             {/* <p>I build, fast, intuitive and responsive web apps.</p> */}
           </section>
-        </Anime>
+          </Fade>
+
         {scrollDown === true ? (
-          <Flip left>
+          <Flip left duration={2000} delay={500}>
             <div className="expand-button">
               <a href="#projects">
                 <IconButton
@@ -109,7 +106,7 @@ const IndexPage = () => {
         ) : null}
       </div>
       {scrollDown === false ? (
-        <Flip right>
+        <Flip right duration={2000} delay={700}>
           <div className="expand-less-button">
             <a href="#">
               <IconButton
