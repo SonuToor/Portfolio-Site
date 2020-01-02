@@ -17,6 +17,7 @@ module.exports = {
     `gatsby-plugin-material-ui`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-json`,
+    `gatsby-plugin-smoothscroll`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

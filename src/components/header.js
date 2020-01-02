@@ -22,6 +22,7 @@ const styles = {
     zIndex: "1100"
   }
 }
+
 class Header extends React.PureComponent {
   render() {
     const { classes } = this.props
