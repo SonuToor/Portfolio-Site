@@ -744,7 +744,6 @@ pre tt:after {
     white-space: nowrap;
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 0.1em; /* Adjust as needed */
-    animation: blink-caret 0.75s step-end infinite, typing 3.5s steps(40, end);
   }
   .expand-button {
     display: none;

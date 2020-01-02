@@ -33,8 +33,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Container>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
+        <Header siteTitle={data.site.siteMetadata.title}/>
+        <div id="main"
           style={{
             margin: `0 auto`,
             maxWidth: 960,

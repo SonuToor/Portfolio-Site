@@ -8,6 +8,7 @@ import ExpandLessIcon from "@material-ui/icons/ExpandLess"
 import IconButton from "@material-ui/core/IconButton"
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 
 const styles = {
@@ -58,7 +59,7 @@ const IndexPage = () => {
 
   // if the scroll position is to the top of the #projects div then make scrollDown false
   const handleScroll = () => {
-    var mainPos = document.getElementById("main").getBoundingClientRect()
+    var mainPos = document.getElementById("top-level").getBoundingClientRect()
     var mainY = mainPos.top + window.pageYOffset
 
     let position = window.scrollY
@@ -69,24 +70,33 @@ const IndexPage = () => {
     }
   }
 
+  const scrollToMain = () => {
+    setScrollDown(!scrollDown)
+    scrollTo('main')
+  }
+
+  const scrollToProjects = () => {
+    setScrollDown(!scrollDown)
+    scrollTo('#projects')
+  }
+
   return (
     <Layout>
       <SEO title="Sonu Toor" />
-      <div style={styles.main} id="main">
+      <div style={styles.main} id="top-level">
         <div className="typewriter-text">
           <h1>Hello, my name is Sonu.</h1>
         </div>
-        <Fade top duration={2000}>
+        <Fade top duration={2500}>
           <div className="orange-colourstrip" />
           <div className="purple-colourstrip" />
         </Fade>
-          <Fade top delay={1000}>
+          <Fade top delay={1500}>
           <section style={{ marginTop: "5%" }}>
             <h3>I like building cool things on the Web.</h3>
             <p>
               I am a web developer, problem solver and serial learner.
             </p>
-            {/* <p>I build, fast, intuitive and responsive web apps.</p> */}
           </section>
           </Fade>
 
@@ -96,7 +106,7 @@ const IndexPage = () => {
               <a href="#projects">
                 <IconButton
                   style={styles.showMoreIcon}
-                  onClick={() => setScrollDown(!scrollDown)}
+                  onClick={() => scrollToProjects()}
                 >
                   <ExpandMoreIcon />
                 </IconButton>
@@ -108,10 +118,10 @@ const IndexPage = () => {
       {scrollDown === false ? (
         <Flip right duration={2000} delay={700}>
           <div className="expand-less-button">
-            <a href="#">
+            <a href="#main">
               <IconButton
                 style={styles.showMoreIcon}
-                onClick={() => setScrollDown(!scrollDown)}
+                onClick={() => scrollToMain()}
               >
                 <ExpandLessIcon />
               </IconButton>

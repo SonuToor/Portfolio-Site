@@ -6,6 +6,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import Toolbar from "@material-ui/core/Toolbar"
 
+const mediaMatch = window.matchMedia('(max-width: 900px)').matches;
+
 const styles = {
   root: {
     flexGrow: 1,
@@ -13,19 +15,23 @@ const styles = {
   main: {
     flex: "1",
   },
+  header: {
+    zIndex: "0"
+  },
+  mobileHeader: {
+    zIndex: "1100"
+  }
 }
 
-// to do make links with zindex -1 still clickable
 class Header extends React.PureComponent {
   render() {
     const { classes } = this.props
     return (
       <HideHeader >
         <AppBar
-          position="fixed"
           color="white"
           elevation={0}
-          style={{zIndex: "0"}}
+          style={mediaMatch ? styles.mobileHeader : styles.header}
         >
           <Toolbar>
             <div className={classes.main}>
