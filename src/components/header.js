@@ -6,8 +6,6 @@ import PropTypes from "prop-types"
 import React from "react"
 import Toolbar from "@material-ui/core/Toolbar"
 
-const mediaMatch = window.matchMedia('(max-width: 900px)').matches;
-
 const styles = {
   root: {
     flexGrow: 1,
@@ -24,6 +22,19 @@ const styles = {
 }
 
 class Header extends React.PureComponent {
+  constructor() {
+    super()
+    this.state = {
+      mediaMatch: true
+    }
+  }
+  componentDidMount = () => {
+    this.setState({
+      mediaMatch: window.matchMedia('(max-width: 900px)').matches
+    })
+
+  }
+
   render() {
     const { classes } = this.props
     return (
@@ -31,7 +42,7 @@ class Header extends React.PureComponent {
         <AppBar
           color="white"
           elevation={0}
-          style={mediaMatch ? styles.mobileHeader : styles.header}
+          style={this.state.mediaMatch ? styles.mobileHeader : styles.header}
         >
           <Toolbar>
             <div className={classes.main}>
