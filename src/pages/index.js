@@ -76,11 +76,11 @@ const IndexPage = () => {
         <div className="typewriter-text">
           <h1>Hello, my name is Sonu.</h1>
         </div>
-        <Fade top duration={2000}>
+        <Fade top duration={2500}>
           <div className="orange-colourstrip" />
           <div className="purple-colourstrip" />
         </Fade>
-          <Fade top delay={1000}>
+          <Fade top delay={1500}>
           <section style={{ marginTop: "5%" }}>
             <h3>I like building cool things on the Web.</h3>
             <p>
