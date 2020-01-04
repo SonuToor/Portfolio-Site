@@ -271,7 +271,7 @@ img {
   border-style: solid;
   border-color: rgb(222, 124, 4);
   background-color: rgb(222, 124, 4);
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 .purple-colourstrip {
   width: 100%;
@@ -279,7 +279,7 @@ img {
   border-style: solid;
   border-color: rgb(145, 36, 134);
   background-color: rgb(145, 36, 134);
-  margin-bottom: 2%;
+  margin-bottom: 1%;
 }
 .expand-button {
   margin-top: 25%;
@@ -301,7 +301,7 @@ img {
 .email-form {
   display: flex;
   flex-direction: column;
-  height: 85vh;
+  height: 89vh;
   justify-content: center;
   width: 50%;
   margin-left: 25%;
