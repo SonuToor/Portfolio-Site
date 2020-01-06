@@ -12,9 +12,6 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 
 
 const styles = {
-  main: {
-    height: "100vh",
-  },
   showMoreIcon: {
     backgroundColor: "rgb(222, 124, 4)",
     color: "rgb(145, 36, 134)",
@@ -83,7 +80,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Sonu Toor" />
-      <div style={styles.main} id="top-level">
+      <div id="top-level">
         <div className="typewriter-text">
           <h1>Hello, my name is Sonu.</h1>
         </div>
