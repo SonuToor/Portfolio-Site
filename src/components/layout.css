@@ -231,6 +231,9 @@ img {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+#top-level {
+  height: 100vh;
+}
 .typewriter-text {
   width: 55%;
   margin-top: 20%;
@@ -294,7 +297,7 @@ img {
 
 .projects {
   display: flex;
-  margin-top: 3%;
+  margin-top: 15%;
   margin-bottom: 5%;
 }
 
@@ -733,6 +736,9 @@ pre tt:after {
 }
 
 @media only screen and (max-width: 900px) {
+  #top-level {
+    height: 70vh;
+  }
   .typewriter-text {
     margin-top: 80%;
     width: 100%;
