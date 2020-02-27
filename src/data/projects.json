@@ -1,20 +1,32 @@
 [
   {
-    "title": "Travel Planner",
-    "slug": "TravelPlanner",
+    "title": "Tell Me More",
+    "slug": "TellMeMore",
     "key": "1",
-    "url": "https://react-travel-planner.netlify.com",
-    "repo": "https://github.com/SonuToor/travel-planner",
-    "image": "./images/itinerary-input.png",
-    "mockup": "./images/travelplannermockup.png",
-    "description": "This itinerary planning app allows you to create a trip, then organize all your relevant travel info in one place.",
-    "fullDescription": "This travel planner web app is for anyone who feels overwhelmed when initially crafting their itinerary. This web app allows a user to select their destination, then input their dates for their trip. The app then organizes and displays the trip in an easy to digest format. It separates the trip into separate days, then each day into morning, afternoon, evening and night. The user can then input the different events for each day and time, they can input flights and trains and even accommodation. The web app also allows for exporting the itinerary events to the user's Google Calendar. ",
-    "tools": "React.js, Material UI, Google Firebase, Google Calendars API, Google Places API"
+    "url": "https://tellmemore.netlify.com/",
+    "repo": "https://github.com/SonuToor/tellmemore",
+    "image": "./images/billsplitter-preview.png",
+    "mockup": "./images/tellmemoremockup.png",
+    "description": "Tell Me More lets you learn more about Twitter trends by smartly pulling in resources relevant to the trend.",
+    "fullDescription": "Tell Me More is a web application that helps a user learn about trending topics in the Twitterverse with a single click. Simply select a trend, then Tell Me More will pull in articles from Reddit and Wikipedia to give you a better understanding of the trend.   The backend which is written in Typescript and uses Express, parses trends retrieved from Twitter smartly, to get queryable words. The trend parsing algorithm covers the vast majority of trends. It smartly tries multiple queries with other API’s using the queryable words from the trend and return articles that are relevant to the trend.",
+    "tools": "React, Typescript, JavaScript (ES6), Node.js, Express, styled-components, Jest"
+  },
+  {
+    "title": "Speakfriend",
+    "slug": "Speakfriend",
+    "key": "2",
+    "url": "https://speak.torontojs.com/",
+    "repo": "https://github.com/torontojs/speakfriend",
+    "image": "./images/billsplitter-preview.png",
+    "mockup": "./images/speakfriendmockup.png",
+    "description": "Speakfriend is an open source tool that helps connect speakers to event organizers in Toronto.",
+    "fullDescription": "Speakfriend was conceived of as a tool to help event organizers in Toronto connect with speakers who would like to give a talk at their event. With the guidance of the TorontoJS organizers I took the lead as the maintainer and main developer of the project and built out the idea into the functional MVP. I am currently working on the second phase, which will include role based permissions and an invite by email system to help grow the platform among other event organizers in Tech organizations around the city and beyond.",
+    "tools": "JavaScript(ES6), React, Airtable, styled-components, React-Router"
   },
   {
     "title": "If-Me",
     "slug": "IfMe",
-    "key": "2",
+    "key": "3",
     "url": "https://www.if-me.org/",
     "repo": "https://github.com/ifmeorg/ifme",
     "image": "./images/billsplitter-preview.png",
@@ -22,5 +34,17 @@
     "description": "If-Me is an open source mental health platform for sharing your mental health experiences with trusted allies.",
     "fullDescription": "If-Me is an open source platform that allows users to share moments, moods, and strategies with trusted allies, provides access to resources and even helps track medication. My major contribution to this project is the text input autocomplete. This component responds to a users input by filtering selection options, it then displays a 'tag' based on the users selection. This component is used throughout the platform, one example being the resources page which is pictured above.",
     "tools": "React.js, Ruby on Rails, Jest, Enzyme, PostgreSQL, Rspec, Capybara, Storybook, Circle CI"
+  },
+  {
+    "title": "Travel Planner",
+    "slug": "TravelPlanner",
+    "key": "4",
+    "url": "https://react-travel-planner.netlify.com",
+    "repo": "https://github.com/SonuToor/travel-planner",
+    "image": "./images/itinerary-input.png",
+    "mockup": "./images/travelplannermockup.png",
+    "description": "This itinerary planning app allows you to create a trip, then organize all your relevant travel info in one place.",
+    "fullDescription": "This travel planner web app is for anyone who feels overwhelmed when initially crafting their itinerary. This web app allows a user to select their destination, then input their dates for their trip. The app then organizes and displays the trip in an easy to digest format. It separates the trip into separate days, then each day into morning, afternoon, evening and night. The user can then input the different events for each day and time, they can input flights and trains and even accommodation. The web app also allows for exporting the itinerary events to the user's Google Calendar. ",
+    "tools": "React.js, Material UI, Google Firebase, Google Calendars API, Google Places API"
   }
 ]

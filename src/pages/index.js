@@ -100,7 +100,7 @@ const IndexPage = () => {
         {scrollDown === true ? (
           <Flip left duration={2000} delay={500}>
             <div className="expand-button">
-              <a href="#projects">
+              <a href="#secondary">
                 <IconButton
                   style={styles.showMoreIcon}
                   onClick={() => scrollToProjects()}
@@ -112,6 +112,7 @@ const IndexPage = () => {
           </Flip>
         ) : null}
       </div>
+      <div id="secondary">
       {scrollDown === false ? (
         <Flip right duration={2000} delay={700}>
           <div className="expand-less-button">
@@ -126,6 +127,7 @@ const IndexPage = () => {
           </div>
         </Flip>
       ) : null}
+      </div>
       <div className="projects" id="projects">
         {projects.map(({ node: project }, index) => {
           const title = project.title
