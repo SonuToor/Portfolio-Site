@@ -3,14 +3,22 @@ import Anime from "react-anime"
 import ContactInput from "./ContactInput"
 import ContactMessage from "./ContactMessage"
 import React from "react"
+import { withStyles } from '@material-ui/core/styles';
 
-const styles = {
-  button: {
+
+const CustomButton = withStyles({
+  root: {
     width: "50%",
-    color: "rgb(145, 36, 134)",
     marginLeft: "25%",
-  },
-}
+    marginTop: "5%",
+    color: "white",
+    backgroundColor: "rgb(145, 36, 134)",
+    '&:hover': {
+      backgroundColor: "rgb(222, 124, 4)"
+    }
+  }
+})(Button)
+
 const EmailForm = () => {
   return (
     <div key={`contact-${Date.now()}`}>
@@ -31,9 +39,9 @@ const EmailForm = () => {
           <ContactInput label="Enter your Email" name="email" type="email" />
           <ContactInput label="Subject" name="subject" type="text" />
           <ContactMessage name="message" />
-          <Button style={styles.button} type="submit">
-            Send
-          </Button>
+          <CustomButton type="submit">
+          Send
+          </CustomButton>
         </form>
       </Anime>
     </div>

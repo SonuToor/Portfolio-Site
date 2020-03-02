@@ -1,8 +1,8 @@
 import Button from "@material-ui/core/Button"
-
 import Image from "gatsby-image"
 import React from "react"
 import { Link } from "gatsby"
+import StyledButton from "../components/StyledButton"
 
 const styles = {
   projectTitle: {
@@ -12,13 +12,10 @@ const styles = {
   },
   links: {
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "space-around",
   },
   demoLink: {
     textDecoration: "none",
-  },
-  button: {
-    color: "rgb(145, 36, 134)",
   },
 }
 
@@ -39,10 +36,10 @@ const ProjectPreview = ({ title, imgData, description, url, index, slug }) => (
     <p>{description}</p>
     <div style={styles.links}>
       <a href={url} target="_blank" style={styles.demoLink}>
-        <Button style={styles.button}>Live Demo</Button>
+        <StyledButton text="Live Demo" />
       </a>
       <Link to={`/${slug}`} style={styles.demoLink}>
-        <Button style={styles.button}>More Info</Button>
+        <StyledButton text="More Info" />
       </Link>
     </div>
   </div>
