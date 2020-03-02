@@ -1,6 +1,6 @@
-import Button from "@material-ui/core/Button"
 import Image from "gatsby-image"
 import React from "react"
+import StyledButton from "../components/StyledButton"
 
 const styles = {
   projectTitle: {
@@ -9,7 +9,10 @@ const styles = {
     color: "rgb(145, 36, 134)",
   },
   links: {
+    width: "25%",
     display: "flex",
+    justifyContent: "space-around"
+
   },
   demoLink: {
     textDecoration: "none",
@@ -36,10 +39,10 @@ const ProjectPage = ({ title, imgData, url, repo, tools, description }) => (
     <p>{tools}</p>
     <div style={styles.links}>
       <a href={url} target="_blank" style={styles.demoLink}>
-        <Button style={styles.button}>Live Demo</Button>
+        <StyledButton text="Live Demo"/>
       </a>
       <a href={repo} target="_blank" style={styles.demoLink}>
-        <Button style={styles.button}>View Code</Button>
+        <StyledButton text="View Code"/>
       </a>
     </div>
   </div>

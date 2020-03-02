@@ -12,7 +12,7 @@ const styles = {
   },
   links: {
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "space-around",
   },
   demoLink: {
     textDecoration: "none",
