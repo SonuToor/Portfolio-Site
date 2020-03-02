@@ -17,9 +17,6 @@ const styles = {
   demoLink: {
     textDecoration: "none",
   },
-  button: {
-    color: "rgb(145, 36, 134)",
-  },
 }
 
 const ProjectPage = ({ title, imgData, url, repo, tools, description }) => (
