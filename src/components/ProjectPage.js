@@ -8,12 +8,6 @@ const styles = {
     marginTop: "2%",
     color: "rgb(145, 36, 134)",
   },
-  links: {
-    width: "25%",
-    display: "flex",
-    justifyContent: "space-around"
-
-  },
   demoLink: {
     textDecoration: "none",
   },
@@ -34,7 +28,7 @@ const ProjectPage = ({ title, imgData, url, repo, tools, description }) => (
       Tools<span style={{ color: "rgb(222, 124, 4)" }}>_</span>
     </p>
     <p>{tools}</p>
-    <div style={styles.links}>
+    <div className="project-page-links">
       <a href={url} target="_blank" style={styles.demoLink}>
         <StyledButton text="Live Demo"/>
       </a>

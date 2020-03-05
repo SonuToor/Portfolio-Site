@@ -322,6 +322,11 @@ img {
   margin-top: 8%;
   margin-bottom: 5%;
 }
+.project-page-links {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+}
 
 .sonu-gif {
   width: 40%;
@@ -786,6 +791,9 @@ pre tt:after {
   }
   .project-page {
     margin-top: 35%;
+  }
+  .project-page-links {
+    width: 100%;
   }
 
   .about-section {
